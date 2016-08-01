@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3D</title>
+	<style>
+		body{
+			background: #000;
+			-webkit-perspective:1000px;
+			-moz-perspective:1000px;
+			-ms-perspective:1000px;
+			-o-perspective:1000px;
+			perspective:1000px;
+			-webkit-perspective-origin: 50% -50%;
+
+		}
+		#container{
+			width: 200px;
+			height: 200px;
+			margin: 200px auto;
+			/*background: red;*/
+			-webkit-transform-style:preserve-3d;
+			-moz-transform-style:preserve-3d;
+			-ms-transform-style:preserve-3d;
+			-o-transform-style:preserve-3d;
+			-webkit-animation:rotate 2s linear infinite;
+			-moz-animation:rotate 2s linear infinite;
+			-ms-animation:rotate 2s linear infinite;
+			-o-animation:rotate 2s linear infinite;
+			animation:rotate 2s linear infinite;
+		}
+		@-webkit-keyframes rotate{
+			from{
+				-webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+			}
+			to{
+				-webkit-transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+			}
+		}
+		.cute{
+			width: 200px;
+			height: 200px;
+			background: rgba(255,255,255,.6);
+			text-align: center;
+			line-height: 200px;
+			font-size: 50px;
+			border-radius: 20px;
+			position: absolute;
+		}
+		.one{
+			-webkit-transform:rotateY(180deg) translateZ(100px);
+			-moz-transform:rotateY(180deg) translateZ(100px);
+			-ms-transform:rotateY(180deg) translateZ(100px);
+			-o-transform:rotateY(180deg) translateZ(100px);
+			
+		}
+		.two{
+			-webkit-transform:rotateY(90deg) translateZ(-100px);
+			-moz-transform:rotateY(90deg) translateZ(-100px);
+			-ms-transform:rotateY(90deg) translateZ(-100px);
+			-o-transform:rotateY(90deg) translateZ(-100px);
+			
+		}
+		.three{
+			-webkit-transform:rotateY(-90deg) translateZ(-100px);
+			-moz-transform:rotateY(-90deg) translateZ(-100px);
+			-ms-transform:rotateY(-90deg) translateZ(-100px);
+			-o-transform:rotateY(-90deg) translateZ(-100px);
+			
+		}
+		.four{
+			-webkit-transform:rotateX(90deg) translateZ(100px);
+			-moz-transform:rotateX(90deg) translateZ(100px);
+			-ms-transform:rotateX(90deg) translateZ(100px);
+			-o-transform:rotateX(90deg) translateZ(100px);
+			
+		}
+		.five{
+			-webkit-transform:rotateX(-90deg) translateZ(100px);
+			-moz-transform:rotateX(-90deg) translateZ(100px);
+			-ms-transform:rotateX(-90deg) translateZ(100px);
+			-o-transform:rotateX(-90deg) translateZ(100px);
+			transform:rotateX(-90deg) translateZ(100px);
+			
+		}
+		.six{
+			-webkit-transform:translateZ(100px);
+			
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="cute one">1</div>
+		<div class="cute two">2</div>
+		<div class="cute three">3</div>
+		<div class="cute four">4</div>
+		<div class="cute five">5</div>
+		<div class="cute six">6</div>
+	</div>
+</body>
+</html>
